@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    padding-left: 50px;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h1 .highlight {
+    color: #150D59;
+}
+
+header {
+    /* background: url(./assets/logo.png) no-repeat; */
+    background-size: 200px;
+    height: 200px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.beauty {
+    float: left;
+}
+
+.beauty img{
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+
+.construction {
+    float: left;
+}
+
+.construction img{
+    float: left;
+    width: 300px;
+    height: 200px;
+}
