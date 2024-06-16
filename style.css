@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Arimo", sans-serif;
+    background-color: #FAF8F2;
     margin-top: 10px;
     padding-left: 100px;
     padding-right: 100px;
@@ -14,8 +15,13 @@ h1 {
     font-size: 5em;
 }
 
+.thick-heading {
+    font-weight: 700; /* Giá trị cao nhất để có độ dày tối đa */
+}
+
 h1 .highlight {
     color: #150D59;
+    font-weight: 700;
 }
 
 .container {
@@ -28,18 +34,17 @@ h1 .highlight {
 }
 
 .beautiful {
+    display: flex;
+    gap: 50px;
     box-sizing: border-box;
     width: 45%;
     text-align: left;
 }
 
-.text1 {
-    color: red;
-}
-
 .beautiful img {
     float: left;
-    width: 50%;
+    object-fit: contain;
+    max-width: 50%;
     height: auto;
 }
 
@@ -48,6 +53,8 @@ h1 .highlight {
 }
 
 .construction {
+    display: flex;
+    gap: 50px;
     box-sizing: border-box;
     width: 45%;
     text-align: left;
@@ -55,12 +62,23 @@ h1 .highlight {
 
 .construction img {
     float: left;
-    width: 50%;
+    object-fit: contain;
+    max-width: 50%;
     height: auto;
 }
 
 .construction p {
     margin-top: 10px;
+}
+
+footer {
+    font-size: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-right: 100px;
+    padding-bottom: 40px;
+    text-align: right;
 }
 
 /* Responsive styles */
@@ -69,6 +87,7 @@ h1 .highlight {
         padding: 10px;
     }
     .beautiful {
+        display: flexbox;
         width: 100%;
         margin: 10px 0;
     }
@@ -82,10 +101,13 @@ h1 .highlight {
     .construction img {
         width: 100%;
     }
+
+    footer {
+        padding: 10px;
+    }
 }
 
 @media (max-width: 480px) {
-    
     .header img {
         width: 40%;
     }
@@ -93,7 +115,6 @@ h1 .highlight {
     h1 {
         font-size: 2.5em;
     }
-    
     
     .text1 {
         display: block;
