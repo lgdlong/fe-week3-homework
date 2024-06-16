@@ -35,8 +35,8 @@ h1 .highlight {
 
 .beautiful {
     display: flex;
+    /* float: left; */
     gap: 50px;
-    box-sizing: border-box;
     width: 45%;
     text-align: left;
 }
@@ -50,6 +50,7 @@ h1 .highlight {
 
 .beautiful p {
     margin-top: 10px;
+    font-size: larger;
 }
 
 .construction {
@@ -69,9 +70,11 @@ h1 .highlight {
 
 .construction p {
     margin-top: 10px;
+    font-size: larger;
 }
 
 footer {
+    color: #150D59;
     font-size: 20px;
     position: fixed;
     bottom: 0;
@@ -86,42 +89,34 @@ footer {
     body {
         padding: 10px;
     }
+    .header img {
+        width: 30%;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
     .beautiful {
-        display: flexbox;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
         width: 100%;
         margin: 10px 0;
     }
     .construction {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
         width: 100%;
         margin: 10px 0;
     }
     .beautiful img {
-        width: 100%;
+        max-width: 100%;
     }
     .construction img {
-        width: 100%;
+        max-width: 100%;
     }
 
     footer {
         padding: 10px;
     }
-}
-
-@media (max-width: 480px) {
-    .header img {
-        width: 40%;
-    }
-
-    h1 {
-        font-size: 2.5em;
-    }
-    
-    .text1 {
-        display: block;
-    }
-    .construction {
-        width: 100%;
-        margin: 10px 0;
-    }
-    
 }
